@@ -1,0 +1,23 @@
+# Weight files (download from Hugging Face instead)
+*.safetensors
+*.bin
+*.ckpt
+*.pt
+*.pth
+*.crdownload
+*.onnx
+
+# Python / Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.env
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
