@@ -27,9 +27,9 @@ pipeline_tag: text-to-video
 
 <div align="center">
 
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Download%20Model%20Weights-yellow.svg?style=for-the-badge)](https://huggingface.co/guillaume127/ltx-2.5-22b-distilled-transformer-fp8)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Download%20Model%20Weights-yellow.svg?style=for-the-badge)](https://huggingface.co/guillaume127/LTX-2.5-FP8)
 [![ComfyUI](https://img.shields.io/badge/ComfyUI-Supported-blue.svg?style=for-the-badge)](https://comfy.org)
-[![Hardware](https://img.shields.io/badge/Tested%20On-RTX%204090%2024GB-76B900.svg?style=for-the-badge&logo=nvidia)](https://huggingface.co/guillaume127/ltx-2.5-22b-distilled-transformer-fp8)
+[![Hardware](https://img.shields.io/badge/Tested%20On-RTX%204090%2024GB-76B900.svg?style=for-the-badge&logo=nvidia)](https://huggingface.co/guillaume127/LTX-2.5-FP8)
 [![License](https://img.shields.io/badge/License-OpenRAIL%2B%2B-lightgrey.svg?style=for-the-badge)](https://huggingface.co/Lightricks/LTX-2.5)
 
 </div>
@@ -39,7 +39,7 @@ Official repository for **FP8 (`float8_e4m3fn`) selective quantization** of Ligh
 This project provides an open-source Python converter and pre-quantized weights engineered specifically for **ComfyUI** on consumer GPUs (e.g. NVIDIA RTX 4090 24GB), achieving full video generation in **~99 seconds** without quality loss or PCIe swapping.
 
 > 📥 **Looking for the converted model weights?**  
-> Download the `.safetensors` model file directly from the [Hugging Face Model Repository](https://huggingface.co/guillaume127/ltx-2.5-22b-distilled-transformer-fp8).
+> Download the `.safetensors` model file directly from the [Hugging Face Model Repository](https://huggingface.co/guillaume127/LTX-2.5-FP8).
 
 ---
 
@@ -97,7 +97,7 @@ Naive FP8 casting on DiT (Diffusion Transformer) architectures breaks normalizat
 
 ## 🚀 How to Install in ComfyUI
 
-1. Download `ltx-2.5-22b-distilled-transformer-fp8_e4m3fn.safetensors` from [Hugging Face](https://huggingface.co/guillaume127/ltx-2.5-22b-distilled-transformer-fp8).
+1. Download `ltx-2.5-22b-distilled-transformer-fp8_e4m3fn.safetensors` from [Hugging Face](https://huggingface.co/guillaume127/LTX-2.5-FP8).
 2. Move the `.safetensors` file into your ComfyUI models directory:
    ```text
    ComfyUI/models/diffusion_models/
@@ -125,5 +125,5 @@ python convert_ltx25_fp8.py --input "path/to/ltx-2.5-22b-distilled-transformer-b
 ## 🙏 Credits & References
 
 - **Original Architecture & Weights**: [Lightricks LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5)
-- **Hugging Face Model Repository**: [guillaume127/ltx-2.5-22b-distilled-transformer-fp8](https://huggingface.co/guillaume127/ltx-2.5-22b-distilled-transformer-fp8)
+- **Hugging Face Model Repository**: [guillaume127/LTX-2.5-FP8](https://huggingface.co/guillaume127/LTX-2.5-FP8)
 - **FP8 Selective Quantization & Release**: [Guillaume-127](https://github.com/Guillaume-127)
