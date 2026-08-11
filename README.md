@@ -113,8 +113,8 @@ If you want to convert your own weights from BF16 to FP8 locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Guillaume-127/ltx-2.5-22b-distilled-transformer-fp8-.git
-cd ltx-2.5-22b-distilled-transformer-fp8-
+git clone https://github.com/Guillaume-127/LTX-2.5-FP8.git
+cd LTX-2.5-FP8
 
 # Run conversion using ComfyUI's virtual environment
 python convert_ltx25_fp8.py --input "path/to/ltx-2.5-22b-distilled-transformer-bf16.safetensors" --output "ltx-2.5-22b-distilled-transformer-fp8_e4m3fn.safetensors"
