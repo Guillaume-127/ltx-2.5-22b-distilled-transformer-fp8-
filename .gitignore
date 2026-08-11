@@ -1,7 +1,8 @@
-# Ignore personal local execution batch files
+# Ignore personal local execution batch and upload scripts
 start.bat
 upload.bat
 *.bat
+upload_to_huggingface.py
 
 # Weight files (download from Hugging Face instead)
 *.safetensors
