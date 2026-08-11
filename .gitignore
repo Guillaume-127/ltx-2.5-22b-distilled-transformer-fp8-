@@ -1,3 +1,8 @@
+# Ignore personal local execution batch files
+start.bat
+upload.bat
+*.bat
+
 # Weight files (download from Hugging Face instead)
 *.safetensors
 *.bin
