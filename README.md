@@ -20,7 +20,7 @@ tags:
 - diffusion-transformer
 - dit
 base_model: Lightricks/LTX-2.5
-pipeline_tag: text-to-video
+pipeline_tag: image-to-video
 ---
 
 # 🎬 LTX 2.5 (22B Distilled Transformer) - FP8 (e4m3fn) for ComfyUI
@@ -50,14 +50,6 @@ Unlike experimental NVFP4 / Blackwell-only builds that require enterprise GPUs (
 - ⚡ **Native RTX 40-Series & Consumer GPU Support**: Engineered specifically for **NVIDIA RTX 4090, RTX 4080, RTX 3090** and standard Ada Lovelace / Ampere GPUs using native PyTorch `float8_e4m3fn`.
 - 🛠️ **Zero Experimental Dependencies**: Works 100% out-of-the-box in vanilla ComfyUI without needing custom C++ compilation or experimental nightly packages.
 - 🛡️ **Selective DiT Precision**: Preserves LayerNorm, AdaLN modulation, and dual-stream audio/video conditioning in BF16 to eliminate visual noise and audio-video desync.
-
----
-
-## ⚠️ Disclaimer & Experimental Status (v1)
-
-> [!WARNING]
-> **Experimental Community Build (v1)**: This FP8 quantization is an early community build (v1). While thoroughly verified and producing high-quality video outputs in standard testing, it requires further community testing across edge cases (e.g., extreme prompt lengths, specific audio-video sync patterns, unusual frame rates, etc.). 
-> Use at your own risk, test it, report any edge-case issues in the **Community** tab on Hugging Face, and share your feedback!
 
 ---
 
